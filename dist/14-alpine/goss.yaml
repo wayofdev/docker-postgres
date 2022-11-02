@@ -1,0 +1,23 @@
+---
+
+process:
+  postgres:
+    running: true
+
+port:
+  tcp:5432:
+    listening: true
+    ip:
+      - 0.0.0.0
+
+command:
+  "psql -U postgres -c 'SELECT 1;'":
+    stdout:
+      - "(1 row)"
+    exit-status: 0
+  "psql -U postgres -c 'SELECT extname FROM pg_extension'":
+    stdout:
+      - "uuid-ossp"
+    exit-status: 0
+
+...

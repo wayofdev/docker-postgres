@@ -1,0 +1,16 @@
+---
+
+all:
+  children:
+    base:
+      hosts:
+        15-alpine:
+          ansible_connection: local
+          postgres_version: 15
+          os_version: alpine
+        14-alpine:
+          ansible_connection: local
+          postgres_version: 14
+          os_version: alpine
+
+...
