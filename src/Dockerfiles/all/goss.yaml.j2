@@ -18,6 +18,8 @@ command:
   "psql -U postgres -c 'SELECT extname FROM pg_extension'":
     stdout:
       - "uuid-ossp"
+      - "pgcrypto"
     exit-status: 0
-
+  "psql -U postgres -c 'SELECT generate_ulid()'":
+    exit-status: 0
 ...

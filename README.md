@@ -23,6 +23,13 @@
 
 This image is used together with [wayofdev/docker-php-dev](https://github.com/wayofdev/docker-php-dev) and other WOD images, to create local development environment for our projects.
 
+Has built in, enabled support for:
+
+* UUID's — covered by uuid-ossp extension
+* ULID's — implemented by [custom extension by Dave Allie](https://blog.daveallie.com/ulid-primary-keys)
+
+If you **like/use** this repository, please consider **starring** it. Thanks!
+
 ![Screenshot](assets/screenshot.png)
 
 ## ⚙️ Development
